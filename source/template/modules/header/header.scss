@@ -2,7 +2,7 @@
   padding: 36px 0 31px;
   background-color: $white;
   position: relative;
-  z-index: 1;
+  z-index: 2;
   @include b(mobile) {
     padding: 15px 0;
   }
