@@ -3,6 +3,7 @@
     "_mixins",
     "../modules/header/header",
     "../modules/icon/icon",
-    "../modules/footer/footer"
+    "../modules/footer/footer",
+    "../modules/head/head"
   ]
 }

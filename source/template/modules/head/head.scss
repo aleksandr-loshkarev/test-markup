@@ -1,0 +1,22 @@
+.head {
+    margin-bottom: 45px;
+    text-align: center;
+    @include b(mobile) {
+        margin-bottom: 25px;
+    }
+
+    .icon {
+        margin-bottom: 30px;
+        @include b(mobile) {
+            margin-bottom: 10px;
+        }
+    }
+
+    h2 {
+        font-size: 30px;
+        font-weight: 200;
+        @include b(mobile) {
+            font-size: 20px;
+        }
+    }
+}

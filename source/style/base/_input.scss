@@ -2,21 +2,25 @@ textarea,
 select,
 .input {
   background-color: #fff;
-  border: 1px solid #bcbcbc;
-  color: $main-font-color;
-  font-size: $main-font-size;
+  border: 1px solid $gray;
+  color: $default;
+  font-size: 20px;
   line-height: $main-font-height;
-  padding: 0 20px;
-  height: 40px;
+  padding: 0 10px;
+  height: 60px;
   width: 100%;
   display: block;
   transition: $global-transition;
   appearance: none;
-  border-radius: 0;
-  @include placeholderColor(#9c9c9c);
+  border-radius: 5px;
+  @include placeholderColor($gray);
+  @include b(mobile) {
+    height: 40px;
+    font-size: 16px;
+  }
 
   &:focus {
-    border-color: #696969;
+    border-color: #435993;
     background-color: #fff;
   }
 

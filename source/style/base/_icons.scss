@@ -1,0 +1,6 @@
+.icon {
+
+    &-personal-info {
+        @include sprite($personal-info);
+    }
+}

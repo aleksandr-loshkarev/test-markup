@@ -1,0 +1,18 @@
+.personal-info(data-controller="personalInfo")
+    .container
+        +head('', 'icon-personal-info', 'Личная информация')
+        .personal-info__wrap
+            form.personal-info__form(action="#")
+                .personal-info__row.js-input-row
+                    label.label(for="name") ФИО
+                    input#name.input.js-input(type="text")
+                .personal-info__row.select
+                .personal-info__row.js-input-row
+                    label.label(for="place") Место проживания
+                    input#place.input.js-input(type="text")
+                .personal-info__row.js-input-row
+                    label.label(for="skype") Skype
+                    input#skype.input.js-input(type="skype")
+                .personal-info__row.js-input-row
+                    label.label(for="email") E-mail
+                    input#email.input.js-input(type="email")

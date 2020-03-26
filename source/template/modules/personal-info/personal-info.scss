@@ -1,0 +1,60 @@
+.personal-info {
+    padding-top: 50px;
+    @include b(mobile) {
+        padding-top: 15px;
+    }
+
+    &__wrap {
+        margin: 0 auto;
+        max-width: 520px;
+    }
+
+    &__row {
+        margin-bottom: 25px;
+        position: relative;
+        z-index: 1;
+        @include b(mobile) {
+            margin-bottom: 10px;
+        }
+
+        .label {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            transform: translateY(-50%);
+            color: $gray;
+            font-size: 24px;
+            transition: all .3s ease-in-out;
+            @include b(mobile) {
+                font-size: 18px;
+            }
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        .input {
+            padding-top: 12px;
+            text-align: center;
+            @include b(mobile) {
+                padding-top: 10px;
+            }
+        }
+
+        &.focus {
+            
+            .label {
+                top: 5px;
+                transform: translateY(0);
+                font-size: 14px;
+                @include b(mobile) {
+                    top: 2px;
+                    font-size: 11px;
+                }
+            }
+        }
+    }
+}

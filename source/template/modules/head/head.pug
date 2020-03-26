@@ -1,0 +1,22 @@
+mixin head(mods, icon, title)
+
+  //- Принимает:
+  //-   mods    {string} - список модификаторов
+  //- Вызов:
+        +head('mod-name1, mod-name2')
+
+  -
+      // список модификаторов
+      var allMods = '';
+      if(typeof(mods) !== 'undefined' && mods) {
+      var modsList = mods.split(',');
+      for (var i = 0; i < modsList.length; i++) {
+      allMods = allMods + ' head--' + modsList[i].trim();
+      }
+    }
+
+  .head(class= allMods)
+    .icon(class=icon)
+    h2= title
+    if(descr)
+        span.descr= descr
