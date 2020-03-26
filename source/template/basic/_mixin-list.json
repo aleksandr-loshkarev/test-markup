@@ -1,0 +1,8 @@
+{
+  "paths": [
+    "_mixins",
+    "../modules/header/header",
+    "../modules/icon/icon",
+    "../modules/footer/footer"
+  ]
+}
