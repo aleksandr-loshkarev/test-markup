@@ -6,7 +6,7 @@ module.exports = function() {
       .pipe($.gp.if($.dev, $.gp.sourcemaps.init()))
       .pipe($.bulkSass())       
       .pipe($.gp.sass()).on('error', $.gp.notify.onError({ title: 'Style' }))
-      .pipe($.gp.autoprefixer({ browsers: $.config.autoprefixerConfig }))
+      .pipe($.gp.autoprefixer({ overrideBrowserslist: $.config.autoprefixerConfig }))
       .pipe($.gp.csscomb($.config.cssCombConfig))
       .pipe($.gp.postcss([
         $.mqpacker({

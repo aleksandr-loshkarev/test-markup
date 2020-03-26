@@ -1,5 +1,8 @@
 @import '../config/mixins';
 
+@include font-face('Roboto', '../fonts/roboto/roboto-regular-webfont', 400);
+@include font-face('Roboto', '../fonts/roboto/roboto-light-webfont', 300);
+@include font-face('Roboto', '../fonts/roboto/roboto-thin-webfont', 200);
 //EXAMPLE RM THIS!!!
 //@include font-face('PT Sans', '../fonts/ptsans/regular/PTSans-Regular', 400);
 //@include font-face('PT Sans','../fonts/ptsans/regular/PTSans-Regular', 400, italic);

@@ -31,10 +31,10 @@ html
   body
     block content       
      
-    include ./modules/preloader/preloader
+    //- include ./modules/preloader/preloader
     if($.dev) 
       include ./modules/pagelist/pagelist.pug
 
     block script
         script(src="assets/js/foundation%=suffix=%.js%=version=%" defer)
-        script(src="assets/js/app%=suffix=%.js%=version=%" defer)       
+        script(src="assets/js/app%=suffix=%.js%=version=%" defer)
