@@ -1,0 +1,11 @@
+- var list = ['БЭМ/OOCSS', 'Верстаю семантично', 'Webpack', 'Stylus/LESS/SASS', 'ES2015/ES2016', 'jQuery', 'Работаю с SVG', 'Gulp/GRUNT', 'Ипользую Git'];
+
+.experience
+    .container
+        +head('', 'icon-experience', 'Расскажите о своем опыте')
+        ul.experience__list
+            each item in list
+                li.experience__item
+                    label.checkbox
+                        input(type="checkbox")
+                        span= item

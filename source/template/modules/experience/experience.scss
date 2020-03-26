@@ -1,0 +1,23 @@
+.experience {
+    padding: 40px 0 60px;
+    @include b(mobile) {
+        padding: 15px 0;
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        margin-bottom: 16px;
+        width: 33.33%;
+        @include b(mobile) {
+            margin-bottom: 10px;
+            width: 50%;
+        }
+        @include b(500) {
+            width: 100%;
+        }
+    }
+}

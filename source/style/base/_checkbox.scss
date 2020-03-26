@@ -7,6 +7,10 @@
 
     &:checked + span {
 
+      &::before {
+        background-color: #435993;
+      }
+
       &:after {
         opacity: 1;
       }
@@ -15,7 +19,7 @@
 
   span {
     display: block;
-    padding: 0 0 0 30px;
+    padding: 0 0 0 33px;
     font-size: $main-font-size;
     line-height: $main-font-height;
     position: relative;
@@ -24,28 +28,38 @@
       content: '';
       display: block;
       position: absolute;
-      width: 16px;
-      height: 16px;
-      top: 50%;
+      width: 20px;
+      height: 20px;
+      top: 0;
       left: 0;
-      margin: -8px 0 0 0;
-      background: #ddd;
+      border-radius: 2px;
+      border: 1px solid #435993;
+      background-color: $white;
     }
 
     &:after {
       content: '';
       display: block;
       position: absolute;
-      height: 8px;
-      width: 5px;
-      border-bottom: 2px solid $accent;
-      border-right: 2px solid $accent;
+      height: 12px;
+      width: 7px;
+      border-bottom: 2px solid $white;
+      border-right: 2px solid $white;
       transform: rotate(45deg);
-      top: 50%;
-      left: 5px;
-      margin: -5px 0 0 0;
+      top: 2px;
+      left: 7px;
       opacity: 0;
       @include trs;
+    }
+  }
+
+  &:hover {
+
+    span {
+
+      &::before {
+        background-color: #e9efff;
+      }
     }
   }
 }

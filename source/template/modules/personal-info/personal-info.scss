@@ -1,7 +1,7 @@
 .personal-info {
     padding: 50px 0 35px;
     @include b(mobile) {
-        padding-top: 15px;
+        padding: 15px 0;
     }
 
     &__wrap {

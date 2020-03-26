@@ -9,22 +9,33 @@
 //
 // At the bottom of this section, we provide information about the spritesheet itself
 // $spritesheet: width height image $spritesheet-sprites;
+$experience-name: 'experience';
+$experience-x: 0px;
+$experience-y: 0px;
+$experience-offset-x: 0px;
+$experience-offset-y: 0px;
+$experience-width: 47px;
+$experience-height: 47px;
+$experience-total-width: 114px;
+$experience-total-height: 47px;
+$experience-image: '../img/sprite.png';
+$experience: (0px, 0px, 0px, 0px, 47px, 47px, 114px, 47px, '../img/sprite.png', 'experience', );
 $personal-info-name: 'personal-info';
-$personal-info-x: 0px;
+$personal-info-x: 67px;
 $personal-info-y: 0px;
-$personal-info-offset-x: 0px;
+$personal-info-offset-x: -67px;
 $personal-info-offset-y: 0px;
 $personal-info-width: 47px;
 $personal-info-height: 47px;
-$personal-info-total-width: 47px;
+$personal-info-total-width: 114px;
 $personal-info-total-height: 47px;
 $personal-info-image: '../img/sprite.png';
-$personal-info: (0px, 0px, 0px, 0px, 47px, 47px, 47px, 47px, '../img/sprite.png', 'personal-info', );
-$spritesheet-width: 47px;
+$personal-info: (67px, 0px, -67px, 0px, 47px, 47px, 114px, 47px, '../img/sprite.png', 'personal-info', );
+$spritesheet-width: 114px;
 $spritesheet-height: 47px;
 $spritesheet-image: '../img/sprite.png';
-$spritesheet-sprites: ($personal-info, );
-$spritesheet: (47px, 47px, '../img/sprite.png', $spritesheet-sprites, );
+$spritesheet-sprites: ($experience, $personal-info, );
+$spritesheet: (114px, 47px, '../img/sprite.png', $spritesheet-sprites, );
 
 // The provided mixins are intended to be used with the array-like variables
 //
