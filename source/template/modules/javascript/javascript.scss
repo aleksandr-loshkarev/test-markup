@@ -2,7 +2,7 @@
     padding: 60px 0 30px;
 
     &__level {
-        margin: 0 -16.63%;
+        margin: 0 -16.63% 15px;
         display: flex;
         @include b(tablet) {
             margin: 0;
@@ -13,11 +13,14 @@
         
 
         &-item {
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
             width: 25%;
             font-size: 13px;
-            text-align: center;
             position: relative;
             z-index: 1;
+            line-height: 1.5;
 
             &:first-child {
                 @include b(tablet) {
@@ -43,5 +46,9 @@
                 }
             }
         }
+    }
+
+    &__slider {
+        margin-bottom: 36px;
     }
 }

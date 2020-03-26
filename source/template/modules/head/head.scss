@@ -1,12 +1,12 @@
 .head {
-    margin-bottom: 45px;
+    margin-bottom: 46px;
     text-align: center;
     @include b(mobile) {
         margin-bottom: 25px;
     }
 
     .icon {
-        margin-bottom: 30px;
+        margin-bottom: 24px;
         @include b(mobile) {
             margin-bottom: 10px;
         }
@@ -14,14 +14,15 @@
 
     h2 {
         font-size: 30px;
-        font-weight: 100;
+        font-weight: 300;
         @include b(mobile) {
             font-size: 20px;
         }
     }
 
     .descr {
-        padding-top: 20px;
+        padding-top: 12px;
         display: block;
+        line-height: 1.5;
     }
 }

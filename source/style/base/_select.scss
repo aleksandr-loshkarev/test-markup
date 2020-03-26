@@ -65,16 +65,16 @@ select {
 
   .label {
     margin: 0 50px;
-    height: 60px;
-    line-height: 60px;
+    height: 58px;
+    line-height: 58px;
     color: #c8c8c8;
     font-size: 24px;
     font-weight: 400;
     text-align: center;
     @include b(mobile) {
-      height: 40px;
+      height: 38px;
       font-size: 16px;
-      line-height: 40px;
+      line-height: 38px;
     }
     &.default {
       color: $default;
@@ -84,9 +84,9 @@ select {
   .button {
     background-color: transparent;
     width: 45px;
-    height: 60px;
+    height: 58px;
     @include b(mobile) {
-      height: 40px;
+      height: 38px;
     }
 
     &::after {
