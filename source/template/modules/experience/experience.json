@@ -1,0 +1,33 @@
+{
+    "id": "experience",
+    "items": [
+        {
+            "name": "БЭМ/OOCSS",
+            "checked": true
+        }, {
+            "name": "Верстаю семантично",
+            "checked": true
+        }, {
+            "name": "Webpack",
+            "checked": false
+        }, {
+            "name": "Stylus/LESS/SASS",
+            "checked": true
+        }, {
+            "name": "ES2015/ES2016",
+            "checked": true
+        }, {
+            "name": "jQuery",
+            "checked": true
+        }, {
+            "name": "Работаю с SVG",
+            "checked": true
+        }, {
+            "name": "Gulp/GRUNT",
+            "checked": true
+        }, {
+            "name": "Ипользую Git",
+            "checked": true
+        }
+    ]
+}

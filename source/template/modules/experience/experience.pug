@@ -1,11 +1,9 @@
-- var list = ['БЭМ/OOCSS', 'Верстаю семантично', 'Webpack', 'Stylus/LESS/SASS', 'ES2015/ES2016', 'jQuery', 'Работаю с SVG', 'Gulp/GRUNT', 'Ипользую Git'];
-
-.experience
+.experience#experiance
     .container
         +head('', 'icon-experience', 'Расскажите о своем опыте')
         ul.experience__list
-            each item in list
+            each item in experience.items
                 li.experience__item
                     label.checkbox
-                        input(type="checkbox")
-                        span= item
+                        input(type="checkbox" checked= item.checked)
+                        span= item.name

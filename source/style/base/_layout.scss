@@ -24,4 +24,8 @@ html {
 .wrapper {
   min-height: 100%;
   overflow: hidden;
+  
+  &.header-stiky {
+    padding-top: 86px;
+  }
 }

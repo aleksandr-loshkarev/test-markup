@@ -3,8 +3,17 @@
   background-color: $white;
   position: relative;
   z-index: 2;
+  transition: all .3s ease;
   @include b(mobile) {
     padding: 15px 0;
+  }
+  
+  &.stiky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 5px 5px 10px 0px rgba($black, .5);
   }
 
   &__burger {
@@ -66,6 +75,10 @@
       margin: 0 36px;
       @include b(mobile) {
         margin: 0 0 10px;
+      }
+      
+      &.active {
+        color: $default;
       }
 
       &:last-child {

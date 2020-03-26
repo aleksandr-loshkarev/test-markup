@@ -1,39 +1,38 @@
-.personal-info(data-controller="personalInfo")
+.personal-info#personal-info(data-controller="personalInfo")
     .container
         +head('', 'icon-personal-info', 'Личная информация')
         .personal-info__wrap
-            form.personal-info__form(action="#")
-                .personal-info__row.js-input-row
-                    label(for="name") ФИО
-                    input#name.input.js-input(type="text")
-                .personal-info__row.select
-                    select.js-custom-select(name="year" data-controller="customSelect")
-                        option(value="") Год рождения
-                        option(value="1998") 1998
-                        option(value="1997") 1997
-                        option(value="1996") 1996
-                        option(value="1995") 1995
-                        option(value="1994") 1994
-                        option(value="1993") 1993
-                        option(value="1992") 1992
-                        option(value="1991") 1991
-                        option(value="1990") 1990
-                        option(value="1989") 1989
-                        option(value="1988") 1988
-                        option(value="1987") 1987
-                        option(value="1986") 1986
-                        option(value="1985") 1985
-                        option(value="1984") 1984
-                        option(value="1983") 1983
-                        option(value="1982") 1982
-                        option(value="1981") 1981
-                        option(value="1980") 1980
-                .personal-info__row.js-input-row
-                    label(for="place") Место проживания
-                    input#place.input.js-input(type="text")
-                .personal-info__row.js-input-row
-                    label(for="skype") Skype
-                    input#skype.input.js-input(type="skype")
-                .personal-info__row.js-input-row
-                    label(for="email") E-mail
-                    input#email.input.js-input(type="email")
+            .personal-info__row.js-input-row
+                label(for="name") ФИО
+                input#name.input.js-input(type="text" value="Лошкарев Александр Сергеевич")
+            .personal-info__row.select
+                select.js-custom-select(name="year" data-controller="customSelect")
+                    option(value="") Год рождения
+                    option(value="1998") 1998
+                    option(value="1997") 1997
+                    option(value="1996") 1996
+                    option(value="1995") 1995
+                    option(value="1994") 1994
+                    option(value="1993") 1993
+                    option(value="1992") 1992
+                    option(value="1991") 1991
+                    option(value="1990") 1990
+                    option(value="1989" selected) 1989
+                    option(value="1988") 1988
+                    option(value="1987") 1987
+                    option(value="1986") 1986
+                    option(value="1985") 1985
+                    option(value="1984") 1984
+                    option(value="1983") 1983
+                    option(value="1982") 1982
+                    option(value="1981") 1981
+                    option(value="1980") 1980
+            .personal-info__row.js-input-row
+                label(for="place") Место проживания
+                input#place.input.js-input(type="text" value="Харьков")
+            .personal-info__row.js-input-row
+                label(for="skype") Skype
+                input#skype.input.js-input(type="skype" value="alex.ukr89")
+            .personal-info__row.js-input-row
+                label(for="email") E-mail
+                input#email.input.js-input(type="email" value="a.loshkarev89@gmail.com")
