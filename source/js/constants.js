@@ -1,4 +1,4 @@
-const CONSTANTS = {
+var CONSTANTS = {
   slick: {
     nextArrow: '',
     prevArrow: '',

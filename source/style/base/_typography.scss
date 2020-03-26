@@ -24,7 +24,7 @@ h4,
 h5,
 h6 {
   color: $default;
-  font-family: $main-font, $fix-font;
+  font-family: $main-font;
   margin: 0;
   padding: 0;
   line-height: $main-font-height;
@@ -89,6 +89,10 @@ a {
   color: $link-color;
   transition: $global-transition;
   text-decoration: none;
+
+  &:hover {
+    color: $link-color-hover;
+  }
 
   &.button {
     text-decoration: none;

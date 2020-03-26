@@ -15,5 +15,12 @@ mixin header(mods)
       }
     }
 
-  header.header(class= allMods)
+  header.header(class= allMods data-controller="header")
     .container
+      .header__burger.js-header-burger
+        span
+      nav.header__nav.js-header-nav
+        a.header__nav-link(href="#") Личная информация
+        a.header__nav-link(href="#") Опыт
+        a.header__nav-link(href="#") JavaScript
+        a.header__nav-link(href="#") О себе
