@@ -1,0 +1,22 @@
+.mCSB_inside {
+    
+    & > .mCSB_container {
+        margin-right: 0;
+    }
+
+    .mCSB_scrollTools {
+        opacity: 1;
+
+        .mCSB_draggerRail {
+            background-color: transparent;
+            width: 4px;
+        }
+
+        .mCSB_dragger {
+
+            .mCSB_dragger_bar {
+            background-color: #d9d9d9;
+            }
+        }
+    }
+}

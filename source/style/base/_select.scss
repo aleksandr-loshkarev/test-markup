@@ -1,9 +1,101 @@
 select {
   display: block;
   @include clearSelect;
-  transition: none;
-  background-position: right 25px center;
-  background-repeat: no-repeat;
-  background-size: 29px 17px;
-  background-color: #fff;
+}
+
+.selectric {
+  border-color: $gray;
+  background: $white;
+  border-radius: 5px;
+
+  &-hover {
+
+    .selectric {
+      border-color: $gray;
+
+      .button::after {
+        border-color: #386082 transparent transparent transparent;
+      }
+    }
+  }
+
+  &-open {
+
+    .selectric {
+      background-color: $white;
+      border-color: $gray;
+    }
+  }
+
+  &-focus {
+
+    .selectric {
+      border-color: $gray;
+    }
+  }
+
+  &-items {
+    padding: 38px 0 31px;
+    border: 0;
+    box-shadow: 3px 0 8px rgba(0, 0, 0, .25);
+    background-color: $white;
+    z-index: 5;
+    border-radius: 5px;
+
+    li {
+      margin-bottom: 1px;
+      padding: 0 10px;
+      color: #435993;
+      font-size: 20px;
+      font-weight: 300;
+      line-height: 1.8;
+      text-align: center;
+
+      &:first-child {
+        display: none;
+      }
+
+      &.highlighted,
+      &:hover {
+        color: $default;
+        background: transparent;
+      }
+    }
+  }
+
+  .label {
+    margin: 0 50px;
+    height: 60px;
+    line-height: 60px;
+    color: #c8c8c8;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+    @include b(mobile) {
+      height: 40px;
+      font-size: 16px;
+      line-height: 40px;
+    }
+    &.default {
+      color: $default;
+    }
+  }
+
+  .button {
+    background-color: transparent;
+    width: 45px;
+    height: 60px;
+    @include b(mobile) {
+      height: 40px;
+    }
+
+    &::after {
+      content: '';
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 7px 7px 0 7px;
+      border-color: #386082 transparent transparent transparent;
+    }
+  }
 }

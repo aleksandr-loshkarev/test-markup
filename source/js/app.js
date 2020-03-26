@@ -4,6 +4,8 @@ import preloader from './controller/preloader';
 import footer from './controller/footer';
 import header from './controller/header';
 import personalInfo from './controller/personalInfo';
+import customSelect from './controller/custom-select';
+import customScroll from './controller/customScroll';
 
 preloader();
 browserUpdate(CONSTANTS.browserUpdateOptions);
@@ -13,5 +15,7 @@ $(document).ready(() => {
   footer();
   header();
   personalInfo();
+  customSelect();
+  customScroll();
   //Other controllers and js modules here
 });
