@@ -1,0 +1,23 @@
+.about {
+    padding: 36px 0 74px;
+    @include b(mobile) {
+        padding: 15px 0;
+    }
+
+    &__wrap {
+        margin: 0 auto;
+        max-width: 520px;
+    }
+
+    .textarea {
+        margin-bottom: 70px;
+        @include b(mobile) {
+            margin-bottom: 30px;
+        }
+    }
+
+    .btn {
+        margin: 0 auto;
+        max-width: 115px;
+    }
+}

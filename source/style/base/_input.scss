@@ -32,9 +32,12 @@ select,
 }
 
 textarea {
-  height: 150px;
+  height: 180px;
   resize: none;
   padding: 10px 20px;
+  @include b(mobile) {
+    height: 140px;
+  }
 }
 
 input[type='file'] {

@@ -9,33 +9,44 @@
 //
 // At the bottom of this section, we provide information about the spritesheet itself
 // $spritesheet: width height image $spritesheet-sprites;
+$about-name: 'about';
+$about-x: 0px;
+$about-y: 0px;
+$about-offset-x: 0px;
+$about-offset-y: 0px;
+$about-width: 47px;
+$about-height: 47px;
+$about-total-width: 181px;
+$about-total-height: 47px;
+$about-image: '../img/sprite.png';
+$about: (0px, 0px, 0px, 0px, 47px, 47px, 181px, 47px, '../img/sprite.png', 'about', );
 $experience-name: 'experience';
-$experience-x: 0px;
+$experience-x: 67px;
 $experience-y: 0px;
-$experience-offset-x: 0px;
+$experience-offset-x: -67px;
 $experience-offset-y: 0px;
 $experience-width: 47px;
 $experience-height: 47px;
-$experience-total-width: 114px;
+$experience-total-width: 181px;
 $experience-total-height: 47px;
 $experience-image: '../img/sprite.png';
-$experience: (0px, 0px, 0px, 0px, 47px, 47px, 114px, 47px, '../img/sprite.png', 'experience', );
+$experience: (67px, 0px, -67px, 0px, 47px, 47px, 181px, 47px, '../img/sprite.png', 'experience', );
 $personal-info-name: 'personal-info';
-$personal-info-x: 67px;
+$personal-info-x: 134px;
 $personal-info-y: 0px;
-$personal-info-offset-x: -67px;
+$personal-info-offset-x: -134px;
 $personal-info-offset-y: 0px;
 $personal-info-width: 47px;
 $personal-info-height: 47px;
-$personal-info-total-width: 114px;
+$personal-info-total-width: 181px;
 $personal-info-total-height: 47px;
 $personal-info-image: '../img/sprite.png';
-$personal-info: (67px, 0px, -67px, 0px, 47px, 47px, 114px, 47px, '../img/sprite.png', 'personal-info', );
-$spritesheet-width: 114px;
+$personal-info: (134px, 0px, -134px, 0px, 47px, 47px, 181px, 47px, '../img/sprite.png', 'personal-info', );
+$spritesheet-width: 181px;
 $spritesheet-height: 47px;
 $spritesheet-image: '../img/sprite.png';
-$spritesheet-sprites: ($experience, $personal-info, );
-$spritesheet: (114px, 47px, '../img/sprite.png', $spritesheet-sprites, );
+$spritesheet-sprites: ($about, $experience, $personal-info, );
+$spritesheet: (181px, 47px, '../img/sprite.png', $spritesheet-sprites, );
 
 // The provided mixins are intended to be used with the array-like variables
 //
