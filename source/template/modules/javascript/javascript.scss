@@ -1,0 +1,47 @@
+.javascript {
+    padding: 60px 0 30px;
+
+    &__level {
+        margin: 0 -16.63%;
+        display: flex;
+        @include b(tablet) {
+            margin: 0;
+        }
+        @include b(mobile) {
+            display: none;
+        }
+        
+
+        &-item {
+            width: 25%;
+            font-size: 13px;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+
+            &:first-child {
+                @include b(tablet) {
+                    text-align: left;
+                }
+            }
+
+            &:last-child {
+                @include b(tablet) {
+                    text-align: right;
+                }
+            }
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 100%;
+                left: 50%;
+                height: 12px;
+                border-right: 1px dotted #e8e8e8;
+                @include b(tablet) {
+                    display: none;
+                }
+            }
+        }
+    }
+}

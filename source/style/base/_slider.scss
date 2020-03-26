@@ -1,0 +1,55 @@
+.ui-widget {
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 33.2%;
+        bottom: 0;
+        width: 33.5%;
+        border-left: 1px solid $white;
+        border-right: 1px solid $white;
+        z-index: 2;
+    }
+
+    &.ui-widget-content {
+        border: 0;
+        background-image: url(../img/slider-line.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+}
+
+.ui-corner-all {
+    border-radius: 0;
+}
+
+.ui-widget-header {
+    background-color: transparent;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        z-index: 2;
+        background-image: url(../img/slider-line-bg.png);
+        background-repeat: no-repeat;
+        background-position: right;
+    }
+}
+
+.ui-state-default,
+.ui-widget-content {
+
+    .ui-state-default {
+        top: 19px;
+        border: 0;
+        background-color: transparent;
+        @include sprite($slider-point);
+        cursor: pointer;
+    }
+}

@@ -11,4 +11,8 @@
     &-about {
         @include sprite($about);
     }
+
+    &-javascript {
+        @include sprite($javascript);
+    }
 }

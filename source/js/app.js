@@ -6,6 +6,7 @@ import header from './controller/header';
 import personalInfo from './controller/personalInfo';
 import customSelect from './controller/custom-select';
 import customScroll from './controller/customScroll';
+import slider from './controller/slider';
 
 preloader();
 browserUpdate(CONSTANTS.browserUpdateOptions);
@@ -17,5 +18,6 @@ $(document).ready(() => {
   personalInfo();
   customSelect();
   customScroll();
+  slider();
   //Other controllers and js modules here
 });

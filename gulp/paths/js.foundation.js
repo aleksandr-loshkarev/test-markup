@@ -5,5 +5,6 @@ module.exports = [
   './node_modules/svg4everybody/dist/svg4everybody.js',
   './node_modules/selectric/public/jquery.selectric.min.js',
   './node_modules/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.js',
+  './node_modules/jquery-ui-dist/jquery-ui.min.js',
   './source/js/global.js'
 ];
